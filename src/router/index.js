@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
+import Log from '@/components/Log'
 
 Vue.use(Router)
 
@@ -10,6 +11,10 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: Hello
+    }, {
+      path: '/log',
+      name: 'Log',
+      component: Log
     }
   ]
 })
